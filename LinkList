@@ -1,0 +1,45 @@
+package classProject;
+
+import java.util.LinkedList;
+
+public class CollectionsDemo {
+
+	public static void main(String[] args) {
+
+		LinkedList ll = new LinkedList();
+
+		ll.add('C');
+		ll.add(12);
+		ll.add(12.45);
+		ll.add("Rai Bahadur");
+		ll.add("True");
+		ll.add(true);
+		ll.add(null);
+		ll.add("value");
+		ll.add(12345678l);
+		System.out.println(ll);
+		System.out.println(ll.size());
+		int sizeOfLinkList = ll.size();
+
+		System.out.println(sizeOfLinkList);
+		System.out.println(ll.addAll(ll));// boolean
+		// ll.clear();
+		// System.out.println(ll);
+
+		ll.add(765);
+		System.out.println(ll);
+
+		ll.clone();// copy or duplicate all above
+
+		System.out.println(ll);
+
+		ll.forEach(System.out::println);
+
+		ll.set(3, "ram");
+		System.out.println(ll);
+
+		// TODO Auto-generated method stub
+
+	}
+
+}
