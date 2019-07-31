@@ -1,0 +1,30 @@
+package classProject;
+
+public class WrapperMethod {
+
+	public static void main(String[] args) {
+		Integer myint = 25;
+		String myString = myint.toString();//convrting int to string
+		System.out.println(myint+100);
+		
+		Double d = 12.456;
+		Character c= 'A';
+		Short s = 23487;
+		Long l = 12323456l;
+		Float f = 123456786545f;
+		
+		System.out.println(myint.intValue());
+		System.out.println(d.doubleValue());
+		System.out.println(c.charValue());
+		System.out.println(s.shortValue());
+		
+		String anum = "23435";
+		System.out.println(anum);
+		int intFromString = Integer.valueOf(anum);
+		System.out.println();
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
