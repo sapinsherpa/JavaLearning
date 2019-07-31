@@ -1,0 +1,21 @@
+package classProject;
+
+import java.util.LinkedList;
+
+public class CollectionsDemo {
+
+	public static void main(String[] args) {
+		
+		LinkedList ll = new LinkedList();
+		
+		ll.add('C');
+		ll.add(12);
+		ll.add(12.45);
+		System.out.println(ll);
+		
+		
+		// TODO Auto-generated method stub
+
+	}
+
+}
