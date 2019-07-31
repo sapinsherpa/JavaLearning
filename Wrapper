@@ -1,0 +1,29 @@
+package classProject;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Wrapper {
+
+	public static void main(String[] args) {
+		
+		Integer myint = new Integer(55);
+		Integer myint1 = 25;
+		
+		Double myDouble = new Double(5.99);
+		System.out.println(myDouble);
+		
+		Character myChar = 'A';
+		System.out.println(myChar);
+		
+		Short  mysh = 124;
+		System.out.println(mysh);
+		
+		Long myLong = new Long(63534877);
+		System.out.println(myLong);
+		
+		
+		
+	
+	}
+}
