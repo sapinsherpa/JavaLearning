@@ -1,0 +1,62 @@
+package classProject;
+
+import java.util.Collections;
+import java.util.Stack;
+
+import javax.swing.text.html.HTMLDocument.Iterator;
+
+public class StackDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Stack<String> stk = new Stack<String>();
+
+		stk.add("Gopal");
+		stk.add("First Date");
+		stk.add("Nepal");
+		stk.add("Go Home");
+		stk.add("Sapin");
+		stk.add("Buru Jee");
+		stk.add("kuru Shree");
+		stk.add("Guru Bhai");
+		stk.add("nuru sir");
+		stk.add("Luru Ram");
+		stk.add("Huru Jung");
+		stk.add("Guru");
+		stk.pop();
+
+		Collections.sort(stk);// To sort alphabetical order
+
+		System.out.println(stk);
+		Collections.sort(stk, Collections.reverseOrder());
+		System.out.println(stk);
+		System.out.println(stk.size());
+		System.out.println(stk.capacity());// default capacity is 10 but if 11th item comes in the size increase by 10
+											// and capacity will be 20
+
+		java.util.Iterator<String> myIterator = stk.iterator();
+		while (myIterator.hasNext()) {
+
+			System.out.println(myIterator.next());
+
+		}
+
+		// equal method is for comparing a stack with another stack or a stack with a
+		// vector.
+
+		Stack<Integer> dta = new Stack<Integer>();
+		dta.add(7464);
+		dta.add(123);
+		dta.add(987);
+		dta.add(187);
+		dta.add(453);
+		dta.add(754);
+		Collections.sort(dta); // acending order
+		System.out.println(dta);
+		Collections.sort(dta, Collections.reverseOrder());// descending orders
+		System.out.println(dta);
+
+	}
+
+}
