@@ -1,0 +1,55 @@
+package classProject;
+
+public class IntfB {
+	private String nameofthestudents;
+	private int monthlyIncome;
+	private int ssn;
+	private String Address;
+
+	public String getAddress() {
+		return Address;
+	}
+
+	public void setAddress(String address) {
+		Address = address;
+	}
+
+	public String getNameofthestudents() {
+		return nameofthestudents;
+	}
+
+	public void setNameofthestudents(String nameofthestudents) {
+		this.nameofthestudents = nameofthestudents;
+	}
+
+	public int getMonthlyIncome() {
+		return monthlyIncome;
+	}
+
+	public void setMonthlyIncome(int monthlyIncome) {
+		this.monthlyIncome = monthlyIncome;
+	}
+
+	public int getSsn() {
+		return ssn;
+	}
+
+	public void setSsn(int ssn) {
+		this.ssn = ssn;
+	}
+
+	public static void main(String[] args) {
+
+		IntfB obj = new IntfB();
+		obj.nameofthestudents = "Sapin";
+		obj.Address = "Sunnyside";
+		obj.monthlyIncome = 15000;
+		obj.ssn = 32425;
+
+		System.out.println("The name: " + obj.nameofthestudents);
+		System.out.println("Address: " + obj.Address);
+		System.out.println("Monthly Income: " + obj.monthlyIncome);
+		System.out.println("Social Security: " + obj.ssn);
+	}
+
+}
