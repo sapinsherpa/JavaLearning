@@ -1,0 +1,33 @@
+package classProject;
+
+import java.util.*;
+
+public class DequeDemo {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+		Deque<String>myDk = new LinkedList<String>();
+		
+		myDk.add("Ram");
+		myDk.add("Gopal");
+		myDk.addFirst("Barma");
+		myDk.add("KUKUR");
+		myDk.addLast("New York");
+		myDk.offer("Fish");
+		myDk.offerLast("Friday");
+				
+		System.out.println(myDk);
+		
+		
+		Iterator<String>MyIterator = myDk.descendingIterator();
+		while (MyIterator.hasNext()) {
+			
+			System.out.println(MyIterator.next());
+			
+		}
+		
+		
+	}
+
+}
